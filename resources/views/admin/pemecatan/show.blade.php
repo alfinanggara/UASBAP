@@ -26,7 +26,7 @@
                                     <tr>
                                         <th>ID</th><td>{{ $pemecatan->id }}</td>
                                     </tr>
-                                    <tr><th> Nama Lengkap </th><td> {{ $pemecatan->nama_lengkap }} </td></tr><tr><th> Employees Id </th><td> {{ $pemecatan->employees_id }} </td></tr><tr><th> Prodi </th><td> {{ $pemecatan->prodi }} </td></tr>
+                                    <tr><th> Nama Lengkap </th><td> {{ $pemecatan->nama_lengkap }} </td></tr><tr><th> Employees Id </th><td> {{ $pemecatan->employees_id }} </td></tr>
                                 </tbody>
                             </table>
                         </div>

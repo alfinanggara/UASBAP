@@ -8,11 +8,7 @@
     <input class="form-control" name="employees_id" type="number" id="employees_id" value="{{ isset($pemecatan->employees_id) ? $pemecatan->employees_id : ''}}" >
     {!! $errors->first('employees_id', '<p class="help-block">:message</p>') !!}
 </div>
-<div class="form-group {{ $errors->has('prodi') ? 'has-error' : ''}}">
-    <label for="prodi" class="control-label">{{ 'Prodi' }}</label>
-    <input class="form-control" name="prodi" type="text" id="prodi" value="{{ isset($pemecatan->prodi) ? $pemecatan->prodi : ''}}" >
-    {!! $errors->first('prodi', '<p class="help-block">:message</p>') !!}
-</div>
+
 <div class="form-group {{ $errors->has('tanggal') ? 'has-error' : ''}}">
     <label for="tanggal" class="control-label">{{ 'Tanggal' }}</label>
     <input class="form-control" name="tanggal" type="date" id="tanggal" value="{{ isset($pemecatan->tanggal) ? $pemecatan->tanggal : ''}}" >
