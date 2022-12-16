@@ -34,6 +34,7 @@
                                 </thead>
                                 <tbody>
                                 @foreach($pemecatan as $item)
+                                <a href="pemecatan/pdf" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Cetak PDF</a>
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->nama_lengkap }}</td><td>{{ $item->employees_id }}</td>

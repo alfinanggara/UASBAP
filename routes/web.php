@@ -10,6 +10,8 @@ use App\Http\Controllers\Admin\loginRegistrationController;
 
 use App\Models\User;
 
+use App\Http\Controllers\LaporanController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,11 +65,15 @@ Route::resource('admin/contract', 'App\Http\Controllers\Admin\contractController
 Route::resource('admin/attendance', 'App\Http\Controllers\Admin\attendanceController');
 Route::resource('admin/bpjs_data', 'App\Http\Controllers\Admin\bpjs_dataController');
 Route::resource('admin/payslip', 'App\Http\Controllers\Admin\payslipController');
+Route::get('pemecatan',[LaporanController::class,'index']);
+Route::get('pemecatan/pdf',[LaporanController::class,'cetak_pdf']);
 
 Route::get('admin/compute_payslip',
 function(Request $request){ 
     return payslipController::compute($request);
 });
 
-
+// Route::get('/pemecatan', function() { 
+//     return view('pemecatan');
+// });
 Route::resource('admin/pemecatan', 'App\Http\Controllers\Admin\pemecatanController');
